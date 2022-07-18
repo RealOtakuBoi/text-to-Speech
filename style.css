@@ -31,7 +31,7 @@ body{
     margin-bottom: 7px;
 }
 
-.wrapper label{
+form .row label{
     margin-bottom: 6px;
     font-size: 18px;
 }
@@ -62,7 +62,7 @@ button{
 }
 
 button:hover{
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     color: #fff;
     text-decoration: none;
 }
@@ -70,4 +70,6 @@ button:hover{
 form .row{
     display: flex;
     flex-direction: column;
+    
 }
+
