@@ -4,5 +4,70 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(1deg, #2cda8c,#9241d3);
+}
+
+.wrapper{
+    width: 375px;
+    background: #ffffff6b;
+    padding: 25px 20px;
+    border-radius: 10px;
+    
+}
+
+.wrapper header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.wrapper label{
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.wrapper textarea{
+    width: 335px;
+    resize: none;
+}
+
+.wrapper form{
+    margin: 35px 0 20px;
+}
+
+
+button{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
 }
