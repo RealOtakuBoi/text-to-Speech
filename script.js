@@ -7,7 +7,7 @@ const speechBtn = document.querySelector(".speech");
 let speeches = speechSynthesis;
 let isSpeaking = true;
 
-
+voice();
 
 speechBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -18,6 +18,17 @@ speechBtn.addEventListener("click", (e) => {
         }
 
         if(textArea.value.length > 80){
+
+
+            setInterval(()=>{
+                if(!speeches.speaking && !isSpeaking){
+                    isSpeaking = true;
+                    speechBtn.innerText = "Convert To Speech";
+                }else{
+                }
+            }, 500);
+
+
             if(isSpeaking){
                 speeches.resume();
                 isSpeaking = false;
@@ -29,6 +40,7 @@ speechBtn.addEventListener("click", (e) => {
                 speechBtn.innerText = 'Resume';
             }
         }
+
     }
 }); 
 
