@@ -19,17 +19,16 @@ speechBtn.addEventListener("click", (e) => {
 
         if(textArea.value.length > 80){
             if(isSpeaking){
-                speeches.pause();
+                speeches.resume();
                 isSpeaking = false;
                 speechBtn.innerText = 'Pause';
             }
             else{
-                speeches.resume();
+                speeches.pause();
                 isSpeaking = true;
                 speechBtn.innerText = 'Resume';
             }
         }
-        
     }
 }); 
 
